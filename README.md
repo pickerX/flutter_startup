@@ -23,3 +23,10 @@ Usage here,
 1. add your screen router at router_table.dart
 2. use Consumer<NavigationCompat>(builder) build ui tree
 3. then, you got NavigationCompat.pushNamed api access permission.
+
+
+### Code styles
+
+1. widget: xxx.w.dart
+2. screen: xxx.page.dart
+3. 全局配置等: xxx.g.dart

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_startup/res/color.dart';
+import 'package:flutter_startup/theme/color.dart';
 
 class CloudStorageInfo {
   final String? svgSrc, title, totalStorage;
