@@ -12,6 +12,9 @@ key.properties
 **/*.keystore
 **/*.jks
 /.idea/gradle.xml
+/.idea/dbnavigator.xml
+/.idea/deploymentTargetDropDown.xml
+/.idea/migrations.xml
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml

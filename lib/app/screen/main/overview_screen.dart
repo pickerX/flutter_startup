@@ -69,7 +69,7 @@ class OverviewState extends State<OverviewScreen>
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Good afternoon, 霸总',
+          Text('Good afternoon,',
               style: Theme.of(context).textTheme.displayMedium),
           Text("Here is an overview of your code performance",
               style: Theme.of(context).textTheme.titleMedium),
