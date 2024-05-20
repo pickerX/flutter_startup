@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_startup/data/menu.data.dart';
+import 'package:flutter_startup/data/Menu.d.dart';
 
 class MenuProvider extends ChangeNotifier {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();

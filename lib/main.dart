@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_startup/app/state/menu_provider.dart';
 import 'package:flutter_startup/app/state/theme_provider.dart';
-import 'package:flutter_startup/config/config.g.dart';
-import 'package:flutter_startup/config/router.g.dart';
+import 'package:flutter_startup/config/GlobalConfig.dart';
+import 'package:flutter_startup/config/AppRouter.dart';
 import 'package:flutter_startup/theme/theme.dart';
 import 'package:flutter_startup/utils/navigator/navigator_compat.dart';
 import 'package:flutter_startup/utils/utilities.dart';
@@ -33,7 +33,7 @@ class Launcher extends StatelessWidget {
           builder: (context, themeController, child) {
             return MaterialApp(
               debugShowCheckedModeBanner: false,
-              routes: routerTable, // default router table configure
+              routes: AppRouter.get(),
               title: '开发者工具',
               themeMode: themeController.themeMode,
               theme: AppTheme.lightTheme(),

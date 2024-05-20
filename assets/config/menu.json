@@ -2,7 +2,7 @@
     "menu": [
         {
             "title": "Home",
-            "route": "/overview",
+            "route": "/",
             "icon": "assets/icons/menu_dashboard.svg"
         },
         {
@@ -10,7 +10,7 @@
             "icon": "assets/icons/menu_dashboard.svg",
             "route": "",
             "children": [
-                {"title":"格式化校验", "route":"/json"},
+                {"title":"格式化校验", "route":"/desAes"},
                 {"title":"JSON视图", "route":"/"},
                 {"title":"JSON压缩转义", "route":"/"},
                 {"title":"JSON生成Java实体类", "route":"/"},
@@ -58,7 +58,7 @@
         {
             "title": "设置",
             "icon": "assets/icons/menu_setting.svg",
-            "route": "/",
+            "route": "",
             "children": [
                 {"title": "主题设置", "route":"/setting"}
             ]

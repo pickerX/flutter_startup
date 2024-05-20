@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_startup/app/state/menu_provider.dart';
-import 'package:flutter_startup/data/menu.data.dart';
+import 'package:flutter_startup/data/Menu.d.dart';
 import 'package:flutter_startup/theme/dimensions.dart';
 import 'package:flutter_startup/utils/navigator/navigator_compat.dart';
 import 'package:flutter_svg/flutter_svg.dart';
