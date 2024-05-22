@@ -49,7 +49,7 @@ class SymmetryState extends CryptoState<SymmetryPage> {
           label: const Text("AES"),
           selected: _index == 0,
         ),
-        const SizedBox(width: defaultPaddingValue),
+        const SizedBox(width: DefaultPaddingValue),
         ChoiceChip(
           onSelected: (value) {
             setState(() {
@@ -60,7 +60,7 @@ class SymmetryState extends CryptoState<SymmetryPage> {
           label: const Text("DES"),
           selected: _index == 1,
         ),
-        const SizedBox(width: defaultPaddingValue),
+        const SizedBox(width: DefaultPaddingValue),
       ],
     );
   }

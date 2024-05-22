@@ -17,14 +17,14 @@ class StorageInfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: defaultPaddingValue),
-      padding: defaultPadding,
+      margin: const EdgeInsets.only(top: DefaultPaddingValue),
+      padding: DefaultPadding,
       decoration: BoxDecoration(
         border: Border.all(
             width: 2,
             color: Theme.of(context).colorScheme.primary.withOpacity(0.15)),
         borderRadius: const BorderRadius.all(
-          Radius.circular(defaultPaddingValue),
+          Radius.circular(DefaultPaddingValue),
         ),
       ),
       child: Row(
@@ -37,7 +37,7 @@ class StorageInfoCard extends StatelessWidget {
           Expanded(
             child: Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: defaultPaddingValue),
+                  const EdgeInsets.symmetric(horizontal: DefaultPaddingValue),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

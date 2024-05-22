@@ -12,7 +12,7 @@ class StorageDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: defaultPadding,
+      padding: DefaultPadding,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.secondary,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
@@ -27,7 +27,7 @@ class StorageDetails extends StatelessWidget {
               fontWeight: FontWeight.w500,
             ),
           ),
-          SizedBox(height: defaultPaddingValue),
+          SizedBox(height: DefaultPaddingValue),
           Chart(),
           StorageInfoCard(
             svgSrc: "assets/icons/Documents.svg",

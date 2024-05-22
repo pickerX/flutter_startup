@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_startup/data/Menu.d.dart';
+import 'package:flutter_startup/widgets/menu/model/menu.d.dart';
 
 class MenuProvider extends ChangeNotifier {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
@@ -24,7 +24,7 @@ class MenuProvider extends ChangeNotifier {
 
   String? getRootMenuRoute(int index) {
     var menu = _model?.menus[index];
-    return menu?.route ?? '';
+    return menu?.routeName ?? '';
   }
 
   void controlMenu() {

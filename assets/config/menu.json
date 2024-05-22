@@ -2,65 +2,65 @@
     "menu": [
         {
             "title": "Home",
-            "route": "/",
+            "routeName": "/",
             "icon": "assets/icons/menu_dashboard.svg"
         },
         {
             "title": "JSON 工具",
             "icon": "assets/icons/menu_dashboard.svg",
-            "route": "",
+            "routeName": "",
             "children": [
-                {"title":"格式化校验", "route":"/desAes"},
-                {"title":"JSON视图", "route":"/"},
-                {"title":"JSON压缩转义", "route":"/"},
-                {"title":"JSON生成Java实体类", "route":"/"},
-                {"title":"JSON转C#实体类", "route":"/"},
-                {"title":"JSON在线编辑器", "route":"/"},
-                {"title":"JSON排序", "route":"/"},
-                {"title":"XML-JSON互转", "route":"/"},
-                {"title":"JSON和GET请求字符串互转", "route":"/"},
-                {"title":"Excel转Json", "route":"/"},
-                {"title":"JSON转csv、excel", "route":"/"},
-                {"title":"在线JSON转yaml,yaml转JSON", "route":"/"},
-                {"title":"JSON校验格式化工具(新)", "route":"/"},
-                {"title":"JSON转dart", "route":"/"},
-                {"title":"JSON转sql", "route":"/"}
+                {"title":"格式化校验", "routeName":"/desAes"},
+                {"title":"JSON视图", "routeName":"/"},
+                {"title":"JSON压缩转义", "routeName":"/"},
+                {"title":"JSON生成Java实体类", "routeName":"/"},
+                {"title":"JSON转C#实体类", "routeName":"/"},
+                {"title":"JSON在线编辑器", "routeName":"/"},
+                {"title":"JSON排序", "routeName":"/"},
+                {"title":"XML-JSON互转", "routeName":"/"},
+                {"title":"JSON和GET请求字符串互转", "routeName":"/"},
+                {"title":"Excel转Json", "routeName":"/"},
+                {"title":"JSON转csv、excel", "routeName":"/"},
+                {"title":"在线JSON转yaml,yaml转JSON", "routeName":"/"},
+                {"title":"JSON校验格式化工具(新)", "routeName":"/"},
+                {"title":"JSON转dart", "routeName":"/"},
+                {"title":"JSON转sql", "routeName":"/"}
             ]
         },
         {
             "title": "加密/解密",
             "icon": "assets/icons/menu_tran.svg",
-            "route": "",
+            "routeName": "",
             "children": [
-                { "title": "Base64加密、解密", "route":"/base64" },
-                { "title": "MD5加密", "route":"/md5" },
-                { "title": "DES,AES等对称加密解密", "route":"/desAes" },
-                { "title": "RSA,RSA2公钥私钥加密解密", "route":"/rsa" },
-                { "title": "SHA加密", "route":"/sha" },
-                { "title": "URL编码", "route":"/url" },
-                { "title": "UTF8编码", "route":"/utf8" },
-                { "title": "UUID在线生成", "route":"/uuid" },
-                { "title": "网址16进制加密", "route":"/uriHex" },
-                { "title": "unicode中文互转", "route":"/unicode" }
+                { "title": "Base64加密、解密", "routeName":"/base64" },
+                { "title": "MD5加密", "routeName":"/md5" },
+                { "title": "DES,AES等对称加密解密", "routeName":"/desAes" },
+                { "title": "RSA,RSA2公钥私钥加密解密", "routeName":"/rsa" },
+                { "title": "SHA加密", "routeName":"/sha" },
+                { "title": "URL编码", "routeName":"/url" },
+                { "title": "UTF8编码", "routeName":"/utf8" },
+                { "title": "UUID在线生成", "routeName":"/uuid" },
+                { "title": "网址16进制加密", "routeName":"/uriHex" },
+                { "title": "unicode中文互转", "routeName":"/unicode" }
             ]
         },
         {
             "title": "条码工具",
             "icon": "assets/icons/menu_task.svg",
-            "route": "",
+            "routeName": "",
             "children": [
-                { "title": "二维码生成器", "route":"/"},
-                { "title": "二维码解析器", "route":"/"},
-                { "title": "条形码生成器", "route":"/"},
-                { "title": "条码解析器", "route":"/"}
+                { "title": "二维码生成器", "routeName":"/"},
+                { "title": "二维码解析器", "routeName":"/"},
+                { "title": "条形码生成器", "routeName":"/"},
+                { "title": "条码解析器", "routeName":"/"}
             ]
         },
         {
             "title": "设置",
             "icon": "assets/icons/menu_setting.svg",
-            "route": "",
+            "routeName": "",
             "children": [
-                {"title": "主题设置", "route":"/setting"}
+                {"title": "主题设置", "routeName":"/setting"}
             ]
         }
     ]

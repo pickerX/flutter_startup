@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_startup/app/state/menu_provider.dart';
+import 'package:flutter_startup/widgets/menu/menu_provider.dart';
 import 'package:flutter_startup/app/state/theme_provider.dart';
 import 'package:flutter_startup/config/GlobalConfig.dart';
 import 'package:flutter_startup/config/AppRouter.dart';

@@ -1,7 +1,7 @@
 import "dart:developer";
 
 import "package:flutter/material.dart";
-import "package:flutter_startup/widgets/container/dashboard_header.w.dart";
+import "package:flutter_startup/widgets/dashboard/dashboard_header.w.dart";
 import "package:flutter_startup/theme/dimensions.dart";
 
 /// Overview 介绍页
@@ -65,7 +65,7 @@ class OverviewState extends State<OverviewScreen>
           radius: 50,
           backgroundImage: NetworkImage(avatarURI),
         ),
-      const SizedBox(width: defaultPaddingValue),
+      const SizedBox(width: DefaultPaddingValue),
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -88,7 +88,7 @@ class OverviewState extends State<OverviewScreen>
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _renderHeader(context),
-        const SizedBox(height: defaultPaddingValue),
+        const SizedBox(height: DefaultPaddingValue),
         _render(context),
       ],
     );

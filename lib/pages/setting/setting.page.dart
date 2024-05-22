@@ -9,7 +9,7 @@ import "package:flutter_startup/pages/setting/components/settinig_title.dart";
 import "package:flutter_startup/pages/setting/components/theme_setting.dart";
 
 class SettingPage extends BasePage {
-  const SettingPage({super.key})
+  const SettingPage({super.key});
 
   @override
   Widget build(BuildContext context) {

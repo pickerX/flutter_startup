@@ -21,10 +21,10 @@ class Dashboard extends StatelessWidget {
             child: SingleChildScrollView(
       // primary: false,
       padding: const EdgeInsets.only(
-          left: defaultPaddingValue,
-          top: 2 * defaultPaddingValue,
-          bottom: defaultPaddingValue,
-          right: defaultPaddingValue),
+          left: DefaultPaddingValue,
+          top: 2 * DefaultPaddingValue,
+          bottom: DefaultPaddingValue,
+          right: DefaultPaddingValue),
       child: Consumer<NavigatorCompat>(
         builder: (context, value, child) {
           Widget board = _buildDashboard(context, value);

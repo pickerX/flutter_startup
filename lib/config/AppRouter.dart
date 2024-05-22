@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_startup/pages/crypto/index.dart';
 import 'package:flutter_startup/pages/crypto/uuid/uuid.page.dart';
 import 'package:flutter_startup/pages/main/main.page.dart';
-import 'package:flutter_startup/pages/main/overview.page.dart';
+import 'package:flutter_startup/pages/overview/overview.page.dart';
 import 'package:flutter_startup/pages/setting/setting.page.dart';
 
 /// 路由注册表

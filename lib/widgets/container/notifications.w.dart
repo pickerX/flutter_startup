@@ -7,7 +7,7 @@ class NotifyContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: defaultPadding,
+      padding: DefaultPadding,
       color: Theme.of(context).colorScheme.background,
       child: Expanded(
         child: Column(

@@ -1,35 +1,22 @@
-// ignore_for_file: file_names
-
-class MenuListModel {
-  final List<MenuItem> menus;
-
-  MenuListModel(this.menus);
-
-  factory MenuListModel.fromJson(Map<String, dynamic> json) {
-    List<dynamic> array = json['menu'];
-    List<MenuItem> menu = array.map((e) => MenuItem.fromJson(e)).toList();
-    return MenuListModel(menu);
-  }
-}
-
+// 菜单相关抽象
 class MenuItem {
   final String title;
   final String? icon;
-  final String? route;
+  final String? routeName;
 
   final List<MenuItem>? children;
 
-  MenuItem(this.title, this.icon, this.route, this.children);
+  MenuItem(this.title, this.icon, this.routeName, this.children);
 
   MenuItem.fromChild(Map<String, dynamic> json)
       : icon = json['icon'],
         title = json['title'],
-        route = json['route'],
+        routeName = json['routeName'],
         children = null;
 
   factory MenuItem.fromJson(Map<String, dynamic> json) {
     var title = json['title'];
-    var route = json['route'];
+    var route = json['routeName'];
     var icon = json['icon'];
 
     List<MenuItem>? source;
@@ -40,8 +27,12 @@ class MenuItem {
     return MenuItem(title, icon, route, source);
   }
 
-  Map<String, dynamic> toJson() =>
-      {'title': title, 'icon': icon, 'route': route, 'children': children};
+  Map<String, dynamic> toJson() => {
+        'title': title,
+        'icon': icon,
+        'routeName': routeName,
+        'children': children
+      };
 }
 
 class Header {
@@ -53,4 +44,16 @@ class Header {
   Header.fromJson(Map<String, dynamic> json)
       : title = json['title'],
         icon = json['icon'];
+}
+
+class MenuListModel {
+  final List<MenuItem> menus;
+
+  MenuListModel(this.menus);
+
+  factory MenuListModel.fromJson(Map<String, dynamic> json) {
+    List<dynamic> array = json['menu'];
+    List<MenuItem> menu = array.map((e) => MenuItem.fromJson(e)).toList();
+    return MenuListModel(menu);
+  }
 }

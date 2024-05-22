@@ -53,7 +53,7 @@ class RSAState extends CryptoState<RSAPage> {
           label: const Text("RSA"),
           selected: _index == 0,
         ),
-        const SizedBox(width: defaultPaddingValue),
+        const SizedBox(width: DefaultPaddingValue),
         ChoiceChip(
           onSelected: (value) {
             setState(() {
@@ -64,7 +64,7 @@ class RSAState extends CryptoState<RSAPage> {
           label: const Text("RSA2"),
           selected: _index == 1,
         ),
-        const SizedBox(width: defaultPaddingValue),
+        const SizedBox(width: DefaultPaddingValue),
       ],
     );
   }
@@ -86,7 +86,7 @@ class RSAState extends CryptoState<RSAPage> {
             errorText: _errorKey,
           ),
         ),
-        const SizedBox(height: defaultPaddingValue),
+        const SizedBox(height: DefaultPaddingValue),
         TextField(
           minLines: 3,
           maxLines: 20,

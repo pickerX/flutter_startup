@@ -1,13 +1,11 @@
-import 'package:flutter_startup/app/state/menu_provider.dart';
-import 'package:flutter_startup/widgets/container/dash_container.w.dart';
-import 'package:flutter_startup/widgets/container/dashboard.w.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_startup/widgets/menu/menu_provider.dart';
+import 'package:flutter_startup/config/AppRouter.dart';
+import 'package:flutter_startup/config/GlobalConfig.dart';
+import 'package:flutter_startup/widgets/dashboard/dashboard.w.dart';
 import 'package:flutter_startup/widgets/menu/rail_menu.w.dart';
 import 'package:flutter_startup/widgets/menu/side_menu.w.dart';
 import 'package:flutter_startup/widgets/responsive.w.dart';
-
-import 'package:flutter/material.dart';
-import 'package:flutter_startup/config/GlobalConfig.dart';
-import 'package:flutter_startup/config/AppRouter.dart';
 import 'package:provider/provider.dart';
 
 /// dynamic menu + dashboard
@@ -22,7 +20,7 @@ class MainPage extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const NavRailMenu(configAsset: GlobalConfig.defaultMenuConfig),
+            const NavRailMenu(jsonAsset: GlobalConfig.defaultMenuConfig),
             // default flex = 1 and it takes 1/6 part of the screen
             Consumer<MenuProvider>(builder: (context, value, child) {
               if (Responsive.isDesktop(context) ||

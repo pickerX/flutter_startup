@@ -1,8 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_startup/app/state/menu_provider.dart';
-import 'package:flutter_startup/data/Menu.d.dart';
+import 'package:flutter_startup/widgets/menu/menu_provider.dart';
+import 'package:flutter_startup/widgets/menu/model/menu.d.dart';
 import 'package:flutter_startup/theme/dimensions.dart';
 import 'package:flutter_startup/utils/navigator/navigator_compat.dart';
 import 'package:provider/provider.dart';
@@ -24,7 +24,7 @@ class SideMenu extends StatelessWidget {
       return Container(
         color: Theme.of(context).colorScheme.primaryContainer,
         child: ListView.builder(
-            padding: const EdgeInsets.only(top: defaultPaddingValue),
+            padding: const EdgeInsets.only(top: DefaultPaddingValue),
             itemCount: menus.children!.length,
             itemBuilder: (context, index) {
               MenuItem e = menus.children![index];
@@ -38,11 +38,11 @@ class SideMenu extends StatelessWidget {
                     selected: true,
                     selectedColor: Theme.of(context).colorScheme.error,
                     onTap: () {
-                      if (e.route?.isNotEmpty ?? false) {
+                      if (e.routeName?.isNotEmpty ?? false) {
                         // ignore '/' for now
-                        if (e.route == '/') return;
+                        if (e.routeName == '/') return;
                         provider.updateSubSelection(index);
-                        navigator.pushNamed(context, e.route!);
+                        navigator.pushNamed(context, e.routeName!);
                       }
                     });
               });

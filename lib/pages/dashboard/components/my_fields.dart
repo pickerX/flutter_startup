@@ -26,8 +26,8 @@ class MyFiles extends StatelessWidget {
             ElevatedButton.icon(
               style: TextButton.styleFrom(
                 padding: EdgeInsets.symmetric(
-                  horizontal: defaultPaddingValue * 1.5,
-                  vertical: defaultPaddingValue /
+                  horizontal: DefaultPaddingValue * 1.5,
+                  vertical: DefaultPaddingValue /
                       (Responsive.isMobile(context) ? 2 : 1),
                 ),
               ),
@@ -37,7 +37,7 @@ class MyFiles extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: defaultPaddingValue),
+        SizedBox(height: DefaultPaddingValue),
         Responsive(
           mobile: FileInfoCardGridView(
             crossAxisCount: _size.width < 650 ? 2 : 4,
@@ -71,8 +71,8 @@ class FileInfoCardGridView extends StatelessWidget {
       itemCount: demoMyFiles.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: crossAxisCount,
-        crossAxisSpacing: defaultPaddingValue,
-        mainAxisSpacing: defaultPaddingValue,
+        crossAxisSpacing: DefaultPaddingValue,
+        mainAxisSpacing: DefaultPaddingValue,
         childAspectRatio: childAspectRatio,
       ),
       itemBuilder: (context, index) => FileInfoCard(info: demoMyFiles[index]),

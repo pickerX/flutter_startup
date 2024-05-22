@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_startup/widgets/container/dashboard_header.w.dart';
+import 'package:flutter_startup/widgets/dashboard/dashboard_header.w.dart';
 import 'package:flutter_startup/widgets/toast.w.dart';
 import 'package:flutter_startup/theme/dimensions.dart';
 import 'package:flutter_startup/utils/crypto.dart';
@@ -137,12 +137,12 @@ class CryptoState<T extends CryptoPage> extends State<T> {
             ),
           ),
           Padding(
-            padding: defaultPadding,
+            padding: DefaultPadding,
             child: Column(children: [
               ElevatedButton(
                   onPressed: () => {_encode(_input)},
                   child: Text(widget.encodeButtonText() ?? "加密")),
-              const SizedBox(height: defaultPaddingValue),
+              const SizedBox(height: DefaultPaddingValue),
               decryptable
                   ? ElevatedButton(
                       onPressed: () => {_decode(_input)},
@@ -170,8 +170,8 @@ class CryptoState<T extends CryptoPage> extends State<T> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                    right: defaultPaddingValue / 2,
-                    bottom: defaultPaddingValue / 2,
+                    right: DefaultPaddingValue / 2,
+                    bottom: DefaultPaddingValue / 2,
                   ),
                   child: IconButton(
                     onPressed: () {
@@ -195,11 +195,11 @@ class CryptoState<T extends CryptoPage> extends State<T> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DashboardHeader(title: widget.title),
-        const SizedBox(height: 3 * defaultPaddingValue),
+        const SizedBox(height: 3 * DefaultPaddingValue),
         buildHeaderExtension() ?? const SizedBox(),
-        const SizedBox(height: defaultPaddingValue),
+        const SizedBox(height: DefaultPaddingValue),
         _buildCrpytoForm(),
-        const SizedBox(height: defaultPaddingValue),
+        const SizedBox(height: DefaultPaddingValue),
         buildExtension() ?? const SizedBox(),
       ],
     );
