@@ -21,15 +21,15 @@ class MainPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const NavRailMenu(jsonAsset: GlobalConfig.defaultMenuConfig),
-            // default flex = 1 and it takes 1/6 part of the screen
-            Consumer<MenuProvider>(builder: (context, value, child) {
-              if (Responsive.isDesktop(context) ||
-                  Responsive.isTablet(context)) {
-                return const Expanded(child: SideMenu());
-              } else {
-                return const SizedBox();
-              }
-            }),
+            // // default flex = 1 and it takes 1/6 part of the screen
+            // Consumer<MenuProvider>(builder: (context, value, child) {
+            //   if (Responsive.isDesktop(context) ||
+            //       Responsive.isTablet(context)) {
+            //     return const Expanded(child: SideMenu());
+            //   } else {
+            //     return const SizedBox();
+            //   }
+            // }),
 
             // It takes 5/6 part of the screen
             Expanded(

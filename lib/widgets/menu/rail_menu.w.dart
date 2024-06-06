@@ -28,7 +28,7 @@ class _NavRailMenuState extends State<NavRailMenu> {
 
   _NavRailMenuState();
 
-  Widget leadingIcon() => showLeading
+  Widget leadingIcon(BuildContext context) => showLeading
       ? FloatingActionButton(
           onPressed: () {
             // Add your onPressed code here!
@@ -66,7 +66,7 @@ class _NavRailMenuState extends State<NavRailMenu> {
                         icon: SvgPicture.asset(
                           menu.icon ?? '',
                           colorFilter: ColorFilter.mode(
-                            Theme.of(context).colorScheme.onPrimaryContainer,
+                            Theme.of(context).colorScheme.primary,
                             BlendMode.srcIn,
                           ),
                           height: Theme.of(context).iconTheme.size,
@@ -92,7 +92,7 @@ class _NavRailMenuState extends State<NavRailMenu> {
                     }
                   },
                   labelType: labelType,
-                  leading: leadingIcon(),
+                  leading: leadingIcon(context),
                   trailing: trailingIcon(),
                   destinations: destinations,
                 );

@@ -12,9 +12,12 @@ class AppTheme {
     return ThemeData(
       colorScheme: lightColorScheme,
       useMaterial3: true,
-      scaffoldBackgroundColor: lightColorScheme.background,
-      textTheme: GoogleFonts.poppinsTextTheme(lightTextTheme),
+      scaffoldBackgroundColor: lightColorScheme.surface,
       canvasColor: lightColorScheme.secondary,
+      textTheme: GoogleFonts.poppinsTextTheme(lightTextTheme),
+      // iconTheme: IconThemeData(color: lightColorScheme.onSecondary),
+      // floatingActionButtonTheme: FloatingActionButtonThemeData(
+      //     backgroundColor: lightColorScheme.primary),
     );
   }
 
@@ -22,9 +25,12 @@ class AppTheme {
     return ThemeData(
       colorScheme: darkColorScheme,
       useMaterial3: true,
-      scaffoldBackgroundColor: darkColorScheme.background,
-      textTheme: GoogleFonts.poppinsTextTheme(darkTextTheme),
+      scaffoldBackgroundColor: darkColorScheme.surface,
       canvasColor: darkColorScheme.secondary,
+      textTheme: GoogleFonts.poppinsTextTheme(darkTextTheme),
+      // iconTheme: IconThemeData(color: darkColorScheme.onSecondary),
+      // floatingActionButtonTheme: FloatingActionButtonThemeData(
+      //     backgroundColor: darkColorScheme.primary),
     );
   }
 }
